@@ -386,6 +386,7 @@ footer .info-item li{
     nav .nav .hamburger{
         display: inline-block;
         border: none;
+        padding: 0;
     }
     nav .nav .hamburger .close {
 		display: none;
