@@ -2,8 +2,8 @@
 
 * {
     box-sizing: border-box;
-    
 }
+
 body{
     font-family: 'Karla', sans-serif;
     margin: 0;
@@ -33,6 +33,7 @@ h3{
 p{
     opacity: 0.8;
     line-height: 1.7;
+    font-size: 14px;
 }
 .flex > div{
     flex: 1;
@@ -43,12 +44,31 @@ p{
 .container button li{
     cursor: pointer;
 }
+.btn{
+    background-color: transparent;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    font-size: 10px;
+    opacity: 0.8;
+    font-weight: 700;
+    border-width: 1.5px;
+    border-style: solid;
+}
 
 /* Styling for Navbar */
+nav{
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
+
 nav .nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 nav .nav .hamburger {
 	display: none;
@@ -62,17 +82,17 @@ nav .nav .hamburger {
 }
 .nav-item {
     padding: 0 10px;
+    font-size: 12px;
 }
  li {
     list-style: none;
     text-transform: uppercase;
+    line-height: 2;
 }
-.btn{
-    padding: 8px 18px;
+.nav-btn{
     color: hsl(256, 26%, 20%);
-    border: 1px solid hsl(256, 26%, 20%);
+    border-color: hsl(256, 26%, 20%);
     margin-left: 10px;
-    letter-spacing: 1px;
 }
 
 /* Styling for header */
@@ -81,6 +101,7 @@ h1{
     position: relative;
     margin: 0;
     padding-top: 50px;
+    font-weight: 400;
 }
 h1::before{
     content: '';
@@ -92,6 +113,7 @@ h1::before{
     left: 0;
 }
 header {
+    margin-top: 105px;
     background-color:hsl(256, 26%, 20%);
     color: #fff;
     position: relative;
@@ -124,11 +146,8 @@ header::before{
 }
 .btn-header{
     color: #fff;
-    background-color: hsl(256, 26%, 20%);
-    border: 1px solid #fff;
-    padding: 6px 18px;
+    border-color: #fff;
     margin-top: 8px;
-    letter-spacing: 1px;
 }
 .img-neg{
     margin-bottom: -230px;
@@ -190,13 +209,9 @@ section .section-two{
 section .section-two h2 {
     font-size: 3em;
 }
-section .section-two button{
-    background-color:  hsl(256, 26%, 20%);
+.btn-cta{
     color: #fff;
-    border: 1px solid #fff;
-    font-size: 12px;
-    padding: 12px 24px;
-    letter-spacing: 1px;
+    border-color:#fff;
     
 }
 /* styling for footer */
